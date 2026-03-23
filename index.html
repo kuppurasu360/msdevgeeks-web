@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MSDevGeeks – A vibrant developer community hosting events, workshops, and conferences. Join us to learn, connect, and grow.">
+    <title>MSDevGeeks – Technical Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">MS<span class="logo-accent">Dev</span>Geeks</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="past-events.html" class="nav-link">Past Events</a></li>
+                <li><a href="call-for-speakers.html" class="nav-link">Speak</a></li>
+                <li><a href="register.html" class="nav-link nav-cta">Register</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb--1"></div>
+            <div class="hero-orb hero-orb--2"></div>
+            <div class="hero-orb hero-orb--3"></div>
+        </div>
+        <div class="hero-content reveal">
+            <span class="hero-badge">🚀 Developer Community</span>
+            <h1 class="hero-title">Build. Learn.<br><span class="gradient-text">Grow Together.</span></h1>
+            <p class="hero-subtitle">MSDevGeeks is a passionate technical community bringing developers together through events, hands-on workshops, and knowledge sharing.</p>
+            <div class="hero-actions">
+                <a href="events.html" class="btn btn-primary">Explore Events <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+                <a href="call-for-speakers.html" class="btn btn-outline">Become a Speaker</a>
+            </div>
+            <div class="hero-stats">
+                <div class="bento">
+                    <span class="stat-number">2,500+</span>
+                    <span class="stat-label">Community Members</span>
+                </div>
+                <div class="bento">
+                    <span class="stat-number">120+</span>
+                    <span class="stat-label">Events Hosted</span>
+                </div>
+                <div class="bento">
+                    <span class="stat-number">80+</span>
+                    <span class="stat-label">Expert Speakers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ HIGHLIGHTS – Bento Grid ============ -->
+    <section class="section" id="highlights">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Empowering <span class="gradient-text">Developers</span></h2>
+                <p class="section-subtitle">Explore everything MSDevGeeks has to offer</p>
+            </div>
+
+            <div class="highlights-grid reveal">
+                <a href="events.html" class="highlight-card">
+                    <div class="highlight-icon" style="background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(124,58,237,0.05));">📅</div>
+                    <h3>Upcoming Events</h3>
+                    <p>Conferences, workshops, and meetups to level up your skills.</p>
+                    <span class="highlight-link">View Events →</span>
+                </a>
+                <a href="past-events.html" class="highlight-card">
+                    <div class="highlight-icon" style="background: linear-gradient(135deg, rgba(6,182,212,0.15), rgba(6,182,212,0.05));">🏛️</div>
+                    <h3>Past Events</h3>
+                    <p>Browse our archive of 120+ sessions with recordings and resources.</p>
+                    <span class="highlight-link">View Archive →</span>
+                </a>
+                <a href="call-for-speakers.html" class="highlight-card">
+                    <div class="highlight-icon" style="background: linear-gradient(135deg, rgba(244,114,182,0.15), rgba(244,114,182,0.05));">🎤</div>
+                    <h3>Call for Speakers</h3>
+                    <p>Share your expertise – submit a proposal and take the stage.</p>
+                    <span class="highlight-link">Submit Proposal →</span>
+                </a>
+                <a href="register.html" class="highlight-card">
+                    <div class="highlight-icon" style="background: linear-gradient(135deg, rgba(67,233,123,0.15), rgba(67,233,123,0.05));">💳</div>
+                    <h3>Register</h3>
+                    <p>Free registration – certificates, resources, and networking included.</p>
+                    <span class="highlight-link">Register Now →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">MS<span class="logo-accent">Dev</span>Geeks</span>
+                    </a>
+                    <p>A passionate technical community bringing developers together through events, knowledge sharing, and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⌨</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="events.html">Current Events</a>
+                    <a href="past-events.html">Past Events</a>
+                    <a href="call-for-speakers.html">Call for Speakers</a>
+                    <a href="register.html">Register</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Community</h4>
+                    <a href="#">Code of Conduct</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Discord</a>
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get notified about new events and community updates.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="your@email.com" required id="newsletterEmail">
+                        <button type="submit" class="btn btn-primary">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MSDevGeeks. Built with ❤️ for the developer community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

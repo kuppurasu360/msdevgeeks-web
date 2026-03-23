@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your speaker proposal for MSDevGeeks events. Share your expertise with a vibrant developer community.">
+    <title>Call for Speakers – MSDevGeeks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">MS<span class="logo-accent">Dev</span>Geeks</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="past-events.html" class="nav-link">Past Events</a></li>
+                <li><a href="call-for-speakers.html" class="nav-link active">Speak</a></li>
+                <li><a href="register.html" class="nav-link nav-cta">Register</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb--1"></div>
+            <div class="hero-orb hero-orb--2"></div>
+            <div class="hero-orb hero-orb--3"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero__content reveal">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Call for Speakers</span>
+                </nav>
+                <h1 class="page-hero__title">Call for <span class="gradient-text">Speakers</span></h1>
+                <p class="page-hero__subtitle">Got expertise to share? We'd love to have you on stage — submit your proposal today!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Process</span>
+                <h2 class="section-title">How It <span class="gradient-text">Works</span></h2>
+            </div>
+
+            <div class="steps-row reveal">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h4>Submit Proposal</h4>
+                    <p>Fill out the form below with your topic, abstract, and bio.</p>
+                </div>
+                <div class="step-connector">→</div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h4>Review</h4>
+                    <p>Our team reviews submissions and shortlists topics within 5 days.</p>
+                </div>
+                <div class="step-connector">→</div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h4>Confirmation</h4>
+                    <p>If selected, you'll receive a confirmation email with event details.</p>
+                </div>
+                <div class="step-connector">→</div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h4>Present!</h4>
+                    <p>Deliver your talk to an engaged, passionate developer audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ BENEFITS + FORM ============ -->
+    <section class="section section--alt" id="speaker-form-section">
+        <div class="container">
+            <div class="cfs-layout reveal">
+                <div class="cfs-benefits">
+                    <div class="section-header" style="text-align:left; margin-bottom: 30px;">
+                        <span class="section-tag">Why Speak?</span>
+                        <h2 class="section-title" style="font-size: 1.6rem;">Speaker <span class="gradient-text">Benefits</span></h2>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎤</div>
+                        <h4>Platform to Shine</h4>
+                        <p>Present to a highly engaged community of developers who are eager to learn.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🌐</div>
+                        <h4>Grow Your Network</h4>
+                        <p>Connect with fellow speakers, industry leaders, and passionate technologists.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🏆</div>
+                        <h4>Speaker Perks</h4>
+                        <p>Receive exclusive swag, certificates, and featured profile on our community page.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🎥</div>
+                        <h4>Recorded Sessions</h4>
+                        <p>Your talk will be recorded and shared with our wider community for lasting impact.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">📝</div>
+                        <h4>Speaker Mentoring</h4>
+                        <p>First-time speaker? We offer mentoring and dry-run sessions to help you prepare.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">✈️</div>
+                        <h4>Travel Support</h4>
+                        <p>For select events, we provide travel and accommodation support to our speakers.</p>
+                    </div>
+                </div>
+
+                <form class="form glass-card" id="speakerForm">
+                    <h3 class="form-title">Submit Your Proposal</h3>
+
+                    <div class="form-group">
+                        <input type="text" id="speakerName" required autocomplete="name">
+                        <label for="speakerName">Full Name</label>
+                        <span class="form-error">Please enter your name</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="speakerEmail" required autocomplete="email">
+                        <label for="speakerEmail">Email Address</label>
+                        <span class="form-error">Please enter a valid email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="speakerTopic" required>
+                        <label for="speakerTopic">Talk Title / Topic</label>
+                        <span class="form-error">Please enter your topic</span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="speakerCategory" required>
+                                <option value="" disabled selected></option>
+                                <option value="ai-ml">AI / Machine Learning</option>
+                                <option value="cloud">Cloud & DevOps</option>
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile Development</option>
+                                <option value="security">Security</option>
+                                <option value="data">Data Engineering</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="speakerCategory">Category</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="speakerDuration" required>
+                                <option value="" disabled selected></option>
+                                <option value="15">Lightning Talk (15 min)</option>
+                                <option value="30">Short Session (30 min)</option>
+                                <option value="45">Full Session (45 min)</option>
+                                <option value="90">Workshop (90 min)</option>
+                            </select>
+                            <label for="speakerDuration">Talk Duration</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="speakerLevel" required>
+                            <option value="" disabled selected></option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                        <label for="speakerLevel">Target Audience Level</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="speakerAbstract" rows="4" required></textarea>
+                        <label for="speakerAbstract">Talk Abstract</label>
+                        <span class="form-error">Please provide a brief abstract</span>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="speakerBio" rows="3" required></textarea>
+                        <label for="speakerBio">Short Bio</label>
+                        <span class="form-error">Please tell us about yourself</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="url" id="speakerLinkedin">
+                        <label for="speakerLinkedin">LinkedIn / Portfolio URL (optional)</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="speakerSubmitBtn">
+                        <span>Submit Proposal</span>
+                        <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PAST SPEAKERS TESTIMONIALS ============ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Speakers <span class="gradient-text">Say</span></h2>
+            </div>
+
+            <div class="testimonials-grid reveal">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"MSDevGeeks gave me the perfect platform to share my Kubernetes knowledge. The audience was engaged, and I made incredible connections!"</div>
+                    <div class="testimonial-author">
+                        <div class="speaker-avatar" style="background: linear-gradient(135deg,#667eea,#764ba2);">RK</div>
+                        <div>
+                            <strong>Rajesh Kumar</strong>
+                            <span>Cloud Architect • Spoke at Kubernetes Masterclass</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"The mentoring support was amazing. As a first-time speaker, it gave me the confidence to deliver a talk I'm truly proud of."</div>
+                    <div class="testimonial-author">
+                        <div class="speaker-avatar" style="background: linear-gradient(135deg,#f093fb,#f5576c);">PS</div>
+                        <div>
+                            <strong>Priya Sharma</strong>
+                            <span>Frontend Lead • Spoke at React 19 Meetup</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">"From the smooth organization to the vibrant community energy — speaking at the Annual Summit was one of the highlights of my year."</div>
+                    <div class="testimonial-author">
+                        <div class="speaker-avatar" style="background: linear-gradient(135deg,#43e97b,#38f9d7);">VR</div>
+                        <div>
+                            <strong>Vikram Rao</strong>
+                            <span>CTO • Spoke at Annual Summit 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">MS<span class="logo-accent">Dev</span>Geeks</span>
+                    </a>
+                    <p>A passionate technical community bringing developers together through events, knowledge sharing, and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⌨</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="events.html">Current Events</a>
+                    <a href="past-events.html">Past Events</a>
+                    <a href="call-for-speakers.html">Call for Speakers</a>
+                    <a href="register.html">Register</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Community</h4>
+                    <a href="#">Code of Conduct</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Discord</a>
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get notified about new events and community updates.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="your@email.com" required id="newsletterEmail">
+                        <button type="submit" class="btn btn-primary">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MSDevGeeks. Built with ❤️ for the developer community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register as a participant for MSDevGeeks events – workshops, meetups, and conferences. Free entry for all community events!">
+    <title>Register – MSDevGeeks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">MS<span class="logo-accent">Dev</span>Geeks</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="past-events.html" class="nav-link">Past Events</a></li>
+                <li><a href="call-for-speakers.html" class="nav-link">Speak</a></li>
+                <li><a href="register.html" class="nav-link nav-cta active">Register</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb--1"></div>
+            <div class="hero-orb hero-orb--2"></div>
+            <div class="hero-orb hero-orb--3"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero__content reveal">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Register</span>
+                </nav>
+                <h1 class="page-hero__title">Participant <span class="gradient-text">Registration</span></h1>
+                <p class="page-hero__subtitle">Reserve your seat at our upcoming events — it's completely free!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PERKS + FORM ============ -->
+    <section class="section" id="register">
+        <div class="container">
+            <div class="register-layout reveal">
+                <div class="register-info">
+                    <div class="section-header" style="text-align:left; margin-bottom: 24px;">
+                        <span class="section-tag">Perks</span>
+                        <h2 class="section-title" style="font-size: 1.6rem;">What You <span class="gradient-text">Get</span></h2>
+                    </div>
+                    <div class="register-perk">
+                        <span class="perk-icon">🎟️</span>
+                        <div>
+                            <h4>Free Entry</h4>
+                            <p>All our community events are free for registered participants.</p>
+                        </div>
+                    </div>
+                    <div class="register-perk">
+                        <span class="perk-icon">📜</span>
+                        <div>
+                            <h4>Certificate of Participation</h4>
+                            <p>Receive a digital certificate after attending each event.</p>
+                        </div>
+                    </div>
+                    <div class="register-perk">
+                        <span class="perk-icon">🍕</span>
+                        <div>
+                            <h4>Food & Networking</h4>
+                            <p>In-person events include refreshments and dedicated networking time.</p>
+                        </div>
+                    </div>
+                    <div class="register-perk">
+                        <span class="perk-icon">💻</span>
+                        <div>
+                            <h4>Resources & Recordings</h4>
+                            <p>Get access to all presentations, code samples, and session recordings.</p>
+                        </div>
+                    </div>
+                    <div class="register-perk">
+                        <span class="perk-icon">🤝</span>
+                        <div>
+                            <h4>Community Access</h4>
+                            <p>Join our Discord and connect with 2,500+ developers across India.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="form glass-card" id="registrationForm">
+                    <h3 class="form-title">Register as Participant</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="regFirstName" required autocomplete="given-name">
+                            <label for="regFirstName">First Name</label>
+                            <span class="form-error">Required</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="regLastName" required autocomplete="family-name">
+                            <label for="regLastName">Last Name</label>
+                            <span class="form-error">Required</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="regEmail" required autocomplete="email">
+                        <label for="regEmail">Email Address</label>
+                        <span class="form-error">Please enter a valid email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="regPhone" autocomplete="tel">
+                        <label for="regPhone">Phone Number (optional)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="regEvent" required>
+                            <option value="" disabled selected></option>
+                            <option value="devsummit-2026">DevSummit 2026 – Apr 18</option>
+                            <option value="azure-ai-workshop">Hands-On Azure AI Studio – May 05</option>
+                            <option value="dotnet-standup">.NET Community Standup – May 22</option>
+                            <option value="copilot-bootcamp">GitHub Copilot Bootcamp – Jun 10</option>
+                            <option value="securecode-summit">SecureCode Summit – Jun 28</option>
+                            <option value="ts-nodejs-night">TypeScript & Node.js Night – Jul 15</option>
+                        </select>
+                        <label for="regEvent">Select Event</label>
+                        <span class="form-error">Please select an event</span>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <select id="regExperience" required>
+                                <option value="" disabled selected></option>
+                                <option value="beginner">Beginner (0-2 years)</option>
+                                <option value="intermediate">Intermediate (2-5 years)</option>
+                                <option value="advanced">Advanced (5+ years)</option>
+                            </select>
+                            <label for="regExperience">Experience Level</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="regRole">
+                                <option value="" disabled selected></option>
+                                <option value="developer">Developer</option>
+                                <option value="designer">Designer</option>
+                                <option value="devops">DevOps / SRE</option>
+                                <option value="manager">Engineering Manager</option>
+                                <option value="student">Student</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="regRole">Role (optional)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="regOrg">
+                        <label for="regOrg">Company / Organization (optional)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="regNotes" rows="3"></textarea>
+                        <label for="regNotes">Dietary / Accessibility Notes (optional)</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full" id="regSubmitBtn">
+                        <span>Complete Registration</span>
+                        <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Help</span>
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is registration really free?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! All MSDevGeeks community events are completely free for registered participants. We believe in open knowledge sharing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I register for multiple events?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can submit the registration form once per event. Just select a different event each time you register.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Will I receive a confirmation email?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, you'll receive a confirmation email within a few minutes of registration with event details, venue/link, and calendar invite.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What if I can't attend after registering?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No worries! Simply reply to your confirmation email to cancel. This helps us manage capacity and waitlists for others.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Are virtual attendance options available?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Many of our events offer hybrid or fully virtual attendance. Check the event details on the Events page for format info.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">MS<span class="logo-accent">Dev</span>Geeks</span>
+                    </a>
+                    <p>A passionate technical community bringing developers together through events, knowledge sharing, and collaboration.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                        <a href="#" class="social-link" aria-label="GitHub">⌨</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="events.html">Current Events</a>
+                    <a href="past-events.html">Past Events</a>
+                    <a href="call-for-speakers.html">Call for Speakers</a>
+                    <a href="register.html">Register</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Community</h4>
+                    <a href="#">Code of Conduct</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Discord</a>
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get notified about new events and community updates.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="your@email.com" required id="newsletterEmail">
+                        <button type="submit" class="btn btn-primary">→</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MSDevGeeks. Built with ❤️ for the developer community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
